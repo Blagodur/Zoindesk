@@ -1,0 +1,650 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>estate</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="flex_around header_line ">
+                    <div class="logo">
+                        <a href="index.html">ZOINDESK</a>
+                    </div>
+                    <div class="sign_up">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="active"><a href="#">Log in</a></li>
+                                    <li><a href="#">Log out</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="active"><a href="#">Sign up free</a></li>
+                                    <li><a href="#">cabinet</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid menu_line">
+                <div class="container">
+                        <div class="flex_around">
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Currencies</a></li>
+                                    <li><a href="#">Exchanges</a></li>
+                                    <li><a href="#">Markets</a></li>
+                                    <li><a href="#">Watchlist</a></li>
+                                    <li><a href="#">Kitties</a></li>
+                                    <li class="has_child"><a href="#">Lights</a>
+                                        <div class="child">
+                                            <h2>Base Currency</h2>
+                                            <ul>
+                                                <li><label class="search"><input type="search" placeholder="Search currencies..."></label></li>
+                                                <li><a href="#">BTC</a> </li>
+                                                <li><a href="#">ETC</a> </li>
+                                                <li><a href="#">AUD</a> </li>
+                                                <li><a href="#">BGN</a> </li>
+                                                <li><a href="#">BRL</a> </li>
+                                                <li><a href="#">CAD</a> </li>
+                                                <li><a href="#">CHF</a> </li>
+                                                <li><a href="#">CNY</a> </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">USD</a>
+
+                                    </li>
+                                    <li class="has_child"><a href="#">2 sec</a>
+                                        <div class="child">
+                                            <h2>Base Currency</h2>
+                                            <ul>
+                                                <li><a href="#">1 sec</a> </li>
+                                                <li><a href="#">2 sec</a> </li>
+                                                <li><a href="#">5 sec</a> </li>
+                                                <li><a href="#">10 sec</a> </li>
+                                                <li><a href="#">30 sec</a> </li>
+                                                <li><a href="#">60 sec</a> </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search_wrapper">
+                                <label class="search">
+                                    <input type="search" placeholder="Search currencies...">
+                                </label>
+                            </div>
+                            <div class="mobile_menu">
+                                <a href="#" class="menu-mobile-btn">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="background"></div>
+            <div class="container">
+                <ul class="advantages">
+                    <li>
+                        <div class="image icon-thermometer"></div>
+                        <p>Total Market Cap</p>
+                        <p><span>$488,827,743,572</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-bitcoin"></div>
+                        <p>Dominance</p>
+                        <p><span>45,97%</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-network"></div>
+                        <p>Accounts</p>
+                        <p><span>5774</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-eye"></div>
+                        <p>Online</p>
+                        <p><span>7451</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-like"></div>
+                        <p>Donate</p>
+                        <p><span>12</span></p>
+                    </li>
+                </ul>
+                <div class="flex_around buttons-wrapper">
+                    <ul>
+                        <li><a class="button-standart icon-list" href="#" data-toggle="modal" data-target="#filterModal">Layout</a></li>
+                        <li><a class="button-standart icon-filter" href="#" data-toggle="modal" data-target="#layoutModal"><span>0</span>Filters</a></li>
+                    </ul>
+                    <div class="search_wrapper">
+                        <label class="search">
+                            <input type="search" placeholder="Search currencies...">
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid">
+                <div class="table_wrapper">
+                    <div class="table_border">
+                        <table class="currency table table-responsive table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Coin</th>
+                                <th>Market&nbsp;Cap</th>
+                                <th>Price</th>
+                                <th>Volume(24h)</th>
+                                <th>Circulating</th>
+                                <th>1h</th>
+                                <th>24h</th>
+                                <th>7d</th>
+                                <th>30d</th>
+                                <th>Monthly</th>
+                                <th>Weekly</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <div class="flex-wrapper">
+                                        <img src="images/bitcoin.png" alt="bitcoin">
+                                        <div class="cur-name">
+                                            <h2>Bitcoin</h2>
+                                            <h3>BTC</h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$231,708,804,910</td>
+                                <td class="grows_up">$13,828.91</td>
+                                <td>$15,193,560,693</td>
+                                <td>16,757,187</td>
+                                <td>3.48%</td>
+                                <td class="decrease">3.48%</td>
+                                <td>-15.99%</td>
+                                <td>-15.99%</td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>
+                                    <div class="flex-wrapper">
+                                        <img src="images/litecoin.png" alt="bitcoin">
+                                        <div class="cur-name">
+                                            <h2>Litecoin</h2>
+                                            <h3>LTC</h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$231,708,804,910</td>
+                                <td class="grows_up">$13,828.91</td>
+                                <td>$15,193,560,693</td>
+                                <td>16,757,187</td>
+                                <td>3.48%</td>
+                                <td class="decrease">3.48%</td>
+                                <td>-15.99%</td>
+                                <td>-15.99%</td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>
+                                    <div class="flex-wrapper">
+                                        <img src="images/monero.png" alt="bitcoin">
+                                        <div class="cur-name">
+                                            <h2>Monero</h2>
+                                            <h3>XMR</h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$231,708,804,910</td>
+                                <td class="grows_up">$13,828.91</td>
+                                <td>$15,193,560,693</td>
+                                <td>16,757,187</td>
+                                <td>3.48%</td>
+                                <td class="decrease">3.48%</td>
+                                <td>-15.99%</td>
+                                <td>-15.99%</td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>
+                                    <div class="flex-wrapper">
+                                        <img src="images/litecoin.png" alt="bitcoin">
+                                        <div class="cur-name">
+                                            <h2>Litecoin</h2>
+                                            <h3>LTC</h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$231,708,804,910</td>
+                                <td class="grows_up">$13,828.91</td>
+                                <td>$15,193,560,693</td>
+                                <td>16,757,187</td>
+                                <td>3.48%</td>
+                                <td class="decrease">3.48%</td>
+                                <td>-15.99%</td>
+                                <td>-15.99%</td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>
+                                    <div class="flex-wrapper">
+                                        <img src="images/monero.png" alt="bitcoin">
+                                        <div class="cur-name">
+                                            <h2>Monero</h2>
+                                            <h3>XMR</h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$231,708,804,910</td>
+                                <td class="grows_up">$13,828.91</td>
+                                <td>$15,193,560,693</td>
+                                <td>16,757,187</td>
+                                <td>3.48%</td>
+                                <td class="decrease">3.48%</td>
+                                <td>-15.99%</td>
+                                <td>-15.99%</td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                                <td><div class="graf_wrap"><img src="images/graf.png"></div> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="position">
+                    <li class="first"><a href="#">First</a></li>
+                    <li><a href="#">&#60; Previous</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a class="active" href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Next &#62;</a></li>
+                    <li class="last"><a href="#">Last</a> </li>
+                </ul>
+                <ul class="advantages">
+                    <li>
+                        <div class="image icon-time"></div>
+                        <p>UTC Time</p>
+                        <p><span>20:30:57</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-coin"></div>
+                        <p>Coins</p>
+                        <p><span>457</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-handshake"></div>
+                        <p>Markets</p>
+                        <p><span>5774</span></p>
+                    </li>
+                    <li>
+                        <div class="image icon-exchange"></div>
+                        <p>Exchanges</p>
+                        <p><span>71</span></p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!--modals-->
+        <div class="modal fade" id="layoutModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body-filter">
+                        <h3>Manage Filters</h3>
+                        <h4>Applied Filters</h4>
+                        <h5>Only coins matching all filter criteria will be shown</h5>
+                        <form class="modal-filter">
+                            <ul>
+                                <li class="dis_inline">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                            </label>
+                                    </div>
+                                    <p>Show only top 100 coins (by market cap)</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkboxG2" id="check1" class="css-checkbox"/><label for="check1" class="css-label"></label>
+                                    <div class="inline-input">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="text" class="form-control" placeholder="Enter value...">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkboxG2" id="check2" class="css-checkbox"/><label for="check2" class="css-label"></label>
+                                    <div class="inline-input">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="text" class="form-control" placeholder="Enter value...">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkboxG2" id="check3" class="css-checkbox"/><label for="check3" class="css-label"></label>
+                                    <div class="inline-input">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="text" class="form-control" placeholder="Enter value...">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkboxG2" id="check4" class="css-checkbox"/><label for="check4" class="css-label"></label>
+                                    <div class="inline-input">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="text" class="form-control" placeholder="Enter value...">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkboxG2" id="check5" class="css-checkbox"/><label for="check5" class="css-label"></label>
+                                    <div class="inline-input">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                        <option>Property</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <select class="form-control">
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                        <option>Condition</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="text" class="form-control" placeholder="Enter value...">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="submit-wrapper">
+                                <input class="button-standart" type="submit" value="done">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body-filter">
+                        <h3>Customize Layout</h3>
+                        <h4>Column Visibility</h4>
+                        <h5>Select values you wish to see</h5>
+                        <form class="modal-customize">
+                            <ul>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="3" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk1">
+                                        <label class="onoffswitch-label" for="chk1">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>Market Cap</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="4" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk2">
+                                        <label class="onoffswitch-label" for="chk2">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>Price</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="5" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk3">
+                                        <label class="onoffswitch-label" for="chk3">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>Volume(24h)</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="6" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk4">
+                                        <label class="onoffswitch-label" for="chk4">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>Circulating</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="7" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk5">
+                                        <label class="onoffswitch-label" for="chk5">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>24h Change (%)</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="8" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk6">
+                                        <label class="onoffswitch-label" for="chk6">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>7d Cnange (% )</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="9" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk7">
+                                        <label class="onoffswitch-label" for="chk7">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>30d Change (%)</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="10" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk8">
+                                        <label class="onoffswitch-label" for="chk8">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>30d Chart</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="11" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk9">
+                                        <label class="onoffswitch-label" for="chk9">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>7d Chart</p>
+                                </li>
+                                <li>
+                                    <div class="onoffswitch">
+                                        <input data-id="12" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch10">
+                                        <label class="onoffswitch-label" for="myonoffswitch10">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <p>90d chart</p>
+                                </li>
+                            </ul>
+                            <div class="submit-wrapper">
+                                <input class="button-standart" type="submit" value="done">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modals-->
+    </body>
+</html>
